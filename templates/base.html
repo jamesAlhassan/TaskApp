@@ -7,6 +7,10 @@
     <title>BASE</title>
   </head>
   <body>
+    <form method="post" action="/tasks/">
+      {% csrf_token %} {{form.title}}
+      <input type="submit" name="Create Task" />
+    </form>
     {% for task in task %}
     <div>
       <p>{{task}}</p>
