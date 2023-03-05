@@ -1,4 +1,8 @@
-<form method="POST" action="">
+{% extends "base.html" %}
+{% block title %} UPDATE TASK {% endblock title %} 
+{% block content %}
+<form method="POSUPDATE TASKT" action="">
   {% csrf_token %} {{form}}
   <input type="submit" />
 </form>
+{% endblock content %}

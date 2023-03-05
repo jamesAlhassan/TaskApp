@@ -19,7 +19,7 @@ def index(request):
 
     context = {'task': task,
      'form': form}
-    return render(request, 'base.html', context)
+    return render(request, 'list_task.html', context)
 
 
 def updata_task(request, pk):
