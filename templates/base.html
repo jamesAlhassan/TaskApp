@@ -13,6 +13,7 @@
     </form>
     {% for task in task %}
     <div>
+      <a href="{% url 'update' task.id %}">Update</a>
       <p>{{task}}</p>
     </div>
 
