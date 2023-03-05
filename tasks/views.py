@@ -6,4 +6,4 @@ from .models import Task
 def index(request):
     task = Task.objects.all()
     context = {'task': task}
-    return HttpResponse('Hello World')
+    return render(request, 'base.html', context)
