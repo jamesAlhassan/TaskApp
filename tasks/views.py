@@ -40,6 +40,10 @@ def updata_task(request, pk):
 
 def delete_task(request, pk):
     item = Task.objects.get(id=pk)
+    
+    if request.method == "POST":
+        item.delete()
+        return redirect('/tasks')
 
     context = {'item': item}
     return render(request, 'delete_task.html', context)
