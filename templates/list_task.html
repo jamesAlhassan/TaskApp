@@ -10,16 +10,16 @@
   </form>
   {% for task in task %}
   <article>
-    <div class="tasks">
+    <h3 class="tasks">
     {% if task.complete == True %}
     <strike>{{task}}</strike>
     {% else %}
     <p>{{task}}</p>
     {% endif %}
-  </div>
+  </h3>
     <div class="up-del-btns">
   
-    <button class="btn update-btn"><a class="update-link" href="{% url 'update_task' task.id %}">Update</a></button>
+    <button class="btn update-btn"><a class="update-link" href="{% url 'update_task' task.id %}">Update/edit</a></button>
     <button class="btn delete-btn"><a class="delete-link" href="{% url 'delete_task' task.id %}">Delete</a></button>
     <br />
     
