@@ -9,10 +9,13 @@
     <button type="submit" class="btn submit-btn">Add</button>
   </form>
   {% for task in task %}
-  <div>
-    <a href="{% url 'update_task' task.id %}">Update</a>
-    <a href="{% url 'delete_task' task.id %}">Delete</a>
+  <div class="up-del-btns">
+    <button class="btn update-btn"><a class="update-link" href="{% url 'update_task' task.id %}">Update</a></button>
+    <button class="btn delete-btn"><a class="delete-link" href="{% url 'delete_task' task.id %}">Delete</a></button>
     <br />
+    
+  </div>
+  <div class="tasks">
     {% if task.complete == True %}
     <strike>{{task}}</strike>
     {% else %}
