@@ -3,7 +3,8 @@
 {% block content %}
 <form method="post" action="/tasks/">
   {% csrf_token %} {{form.title}}
-  <input type="submit" name="Create Task" />
+  <!-- <input type="submit" name="Create Task" /> -->
+  <button type="submit">Add</button>
 </form>
 {% for task in task %}
 <div>
@@ -17,5 +18,4 @@
   {% endif %}
 </div>
 
-{% endfor %}
-{% endblock content %}
+{% endfor %} {% endblock content %}
