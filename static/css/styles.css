@@ -1,0 +1,27 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --clr-violet: #5e35b1;
+  --clr-yellow: #ffa726;
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: var(--clr-grey-9);
+}

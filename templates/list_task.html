@@ -1,6 +1,5 @@
-{% extends "base.html" %}
-{% block title %}TASK LIST{% endblock title %}
-{% block content %}
+{% extends "base.html" %} {% load static %}
+{% block title %}TASK LIST{% endblock title %} {% block content %}
 <form method="post" action="/tasks/">
   {% csrf_token %} {{form.title}}
   <!-- <input type="submit" name="Create Task" /> -->
